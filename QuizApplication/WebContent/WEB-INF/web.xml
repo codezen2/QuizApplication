@@ -9,4 +9,16 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <servlet-name>QuizController</servlet-name>
+    <servlet-class>com.sapient.web.QuizController</servlet-class>
+    <init-param>
+	    <param-name>questions</param-name>
+	    <param-value>5</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QuizController</servlet-name>
+    <url-pattern>/start</url-pattern>
+  </servlet-mapping>
 </web-app>
